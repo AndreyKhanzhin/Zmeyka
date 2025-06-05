@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Введите размерность матрицы");
+Console.WriteLine("Введите размерность матрицы");
 
 int n;
 while (!(int.TryParse(Console.ReadLine(), out n))) {
@@ -11,19 +11,13 @@ int num = 1;
 for (int d = 0; d < 2 * n - 1; d++) {
     
     int r;
+    int c;
 
     if (d < n) {
         r = 0;
+        c = d;
     } else { 
         r = d - n + 1;
-    }
-    
-    int c;
-    
-    if (d < n) { 
-        c = d;
-    }
-    else { 
         c = n - 1;
     }
 
